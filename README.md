@@ -243,12 +243,24 @@ mcp-client-example/
 
 ---
 
-## Related Projects
+## Part of the Context Continuity Stack
 
-- [mcp-rag-server](https://github.com/0xrdan/mcp-rag-server) - MCP server this client connects to
-- [rag-pipeline](https://github.com/0xrdan/rag-pipeline) - The RAG backend powering the server
-- [ai-orchestrator](https://github.com/0xrdan/ai-orchestrator) - Multi-model routing for AI responses
-- [@modelcontextprotocol/sdk](https://github.com/modelcontextprotocol/sdk) - Official MCP SDK
+This repo demonstrates **programmatic access to context continuity services** — connecting custom applications to MCP-based memory systems.
+
+| Layer | Role | This Repo |
+|-------|------|-----------|
+| Intra-session | Short-term memory | — |
+| Document-scoped | Injected content | — |
+| **Retrieved** | **Connect to semantic memory via MCP** | **mcp-client-example** |
+| Progressive | Staged responses | — |
+
+While Claude Code and Claude Desktop have built-in MCP support, this client enables custom applications to access the same context continuity capabilities — RAG queries, document indexing, and knowledge base search.
+
+**Related repos:**
+- [mcp-rag-server](https://github.com/0xrdan/mcp-rag-server) — The MCP server this client connects to
+- [rag-pipeline](https://github.com/0xrdan/rag-pipeline) — The RAG backend powering the server
+- [chatbot-widget](https://github.com/0xrdan/chatbot-widget) — Session cache, Research Mode, conversation export
+- [ai-orchestrator](https://github.com/0xrdan/ai-orchestrator) — Multi-model routing for AI responses
 
 ---
 
