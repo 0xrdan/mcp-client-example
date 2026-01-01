@@ -1,0 +1,51 @@
+{
+  "name": "@danmonteiro/mcp-client-example",
+  "version": "1.0.0",
+  "description": "Reference implementation for connecting to MCP (Model Context Protocol) servers",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "typecheck": "tsc --noEmit",
+    "example:basic": "npx tsx examples/basic-usage.ts",
+    "example:rag": "npx tsx examples/rag-server.ts",
+    "example:cli": "npx tsx examples/interactive-cli.ts"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "anthropic",
+    "claude",
+    "ai",
+    "llm",
+    "client"
+  ],
+  "author": "Dan Monteiro",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/0xrdan/mcp-client-example.git"
+  },
+  "homepage": "https://github.com/0xrdan/mcp-client-example#readme",
+  "bugs": {
+    "url": "https://github.com/0xrdan/mcp-client-example/issues"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
